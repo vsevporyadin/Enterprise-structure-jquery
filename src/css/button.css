@@ -1,0 +1,93 @@
+
+/* User */
+.fa-i-cursor {
+	margin: -1px 0  0 3px;
+}
+.fa-check {
+	margin: 0 0  0 1px;
+}
+.fa-times {
+	margin: 0 0  0 2px;
+}
+/* Outline none */
+button:focus {
+  outline: none;
+}
+.btn:focus {
+  box-shadow: none;
+}
+.btn:active {
+  box-shadow: none;
+}
+/* Standard */
+.fa-size {
+	font-size: 8px;
+}
+.fa-gray {
+	color: #f9f9f9;
+}
+/* Style */
+.circle {
+  width: 15px;
+  height: 15px;
+  background: #707070;
+	border: 2px solid #707070;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+	padding: 0; 
+}
+.simpleRotate {
+  -moz-animation: rotate 0.1s 2 ease-in-out alternate;
+  -webkit-animation: rotate 0.1s 2 ease-in-out alternate;
+  animation: rotate 0.1s 2 ease-in-out alternate;
+}
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+@keyframes rotate {
+  0% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+.circle[data-animation="simpleRotate"]:not(.simpleRotate) {
+  -moz-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  -o-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  -webkit-transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+  transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+}
+.circle[data-animation="simpleRotate"]:not(.simpleRotate):hover {
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

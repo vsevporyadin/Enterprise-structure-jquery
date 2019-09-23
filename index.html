@@ -1,0 +1,171 @@
+<!doctype html>
+<!-- browser-sync start --server --files "./src/css/*.css,./src/js/*.js,html/*.html,*.*" -->
+<html lang="en">
+	<head>
+		<title>Структура</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- Assets CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&display=swap&subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.1/dist/css/bootstrap-select.min.css">
+		<!-- User CSS -->
+		<link rel="stylesheet" href="./src/css/main.css">
+		<link rel="stylesheet" href="./src/css/forms.css">
+		<link rel="stylesheet" href="./src/css/button.css">
+		<link rel="stylesheet" href="./src/css/jsTree.css">
+	</head>
+	<body>
+		<div class="context-menu">
+			<ul class="context-menu-items">
+				<li id="createForlder" class="context-menu-item">Добавить</li>
+				<li id="renameForlder" class="context-menu-item">Переименовать</li>
+				<li id="deleteForlder" class="context-menu-item">Удалить</li>
+				<li id="OpenAll" class="context-menu-item">Развернуть</li>
+				<li id="RollUp" class="context-menu-item">Свернуть</li>
+			</ul>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="title col-lg-12">
+					<h1>Структура</h1>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="block-calc">
+						<div class="row">
+							<div class="col-lg-12">
+								<input type="text" class="jstree-search form-control search-input" id="search" name="search" placeholder="Поиск">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="jstree-cont form-cont">
+									<div id="data">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="block-calc form-cont col-lg-12">
+						<div class="row dep">
+							<h2 class="dep-name col-lg-10 p-0 m-0" id="jstree-result">Result</h2>
+							<div class="dep-btn-box bb-r col-lg-2 p-0">
+								<button id="dep-re" class="circle" data-animation="simpleRotate" data-remove="200"><i class="fas fa-i-cursor fa-gray fa-size"></i></button>
+							</div>
+							<div class="col-lg-10 p-0">
+								<input id="dep-re-input" type="text" class="form-control d-none" placeholder="Введите новое название">
+							</div>
+							<div class="col-lg-2 bb-r p-0">
+								<button id="dep-conf-btn" class="circle d-none" data-animation="simpleRotate" data-remove="200"><i class="fas fa-check fa-gray fa-size"></i></button>
+							</div>
+						</div>
+						<div class="row ruck">
+							<div class="col-lg-12">
+								<div class="ruck-box">
+									<div class="row ruck-edit">
+										<div class="col-lg-12">
+											<h5>Руководитель:</h5>
+											<select id="lstBox6" class="selectpicker form-cont" data-max-options="1" data-live-search="true" data-style="btn-white" data-width="100%" title="Выберите руководителя">
+											</select>
+										</div>
+									</div>
+									<div class="row ruck-conf d-none">
+										<div class="col-lg-9">
+											<div class="row">
+												<h5>Руководитель:</h5>
+											</div>
+											<div class="row">
+												<p id="lstBox4" class="col-lg-10 p-0"></p>
+											</div>
+										</div>
+										<div class="col-lg-3 bb-r">
+											<div class="col-lg-2">
+												<button id="ruck-btn-del" class="circle" data-animation="simpleRotate" data-remove="200"><i class="fas fa-times fa-gray fa-size"></i></button>
+											</div>
+											<div class="col-lg-2">
+												<button id="ruck-btn-edit" class="circle" data-animation="simpleRotate" data-remove="200"><i class="fas fa-i-cursor fa-gray fa-size"></i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row sotrud">
+							<div class="col-lg-12">
+								<div class="row">
+									<div class="col-lg-10">
+										<h5>Сотрудники:</h5>
+									</div>
+									<div class="col-lg-2 bb-r">
+										<button id="edit-list" data-toggle="modal" data-target="#exampleModalCenter" class="circle" data-animation="simpleRotate" data-remove="200"><i class="fas fa-i-cursor fa-gray fa-size"></i></button>
+									</div>
+								</div>
+								<div class="row sotrud">
+									<div class="col-lg-12">
+										<div id='lstBox3'>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal sotrud -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h6 class="modal-title col-lg-7" id="exampleModalLongTitle">Назначить сотрудников</h6>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-lg-6">
+										<div class="col-lg-12 p-0">
+											<h4>Все сотрудники</h4>
+											<input type="text" id="modal-search1" onkeyup="myFunction()" class="search-input form-control" placeholder="Поиск">
+											<select id='lstBox5' multiple="multiple" class="form-control getjsonlist clop">
+											</select>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="col-lg-12 p-0">
+											<h4 id="list-pool"></h4>
+											<input type="text" id="modal-search2" onkeyup="myFunction()" class="search-input form-control" placeholder="Поиск">
+											<select id='lstBox1' multiple="multiple" class="form-control clop3">
+											</select>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="./src/js/script.js"></script>
+	</body>
+</html>

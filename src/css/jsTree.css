@@ -1,0 +1,68 @@
+
+.jstree-default .jstree-node {
+	margin-left: 15px;
+}
+.jstree-anchor, .jstree-anchor:link, .jstree-anchor:visited, .jstree-anchor:hover, .jstree-anchor:active {
+	text-decoration: none;
+	color: #383838;
+	font-weight: 500;
+}
+/* Search */
+.jstree-anchor.jstree-search {
+  font-style: normal;
+  color: #32a932;
+  font-weight: bold;
+}
+/* Context-menu */
+.context-menu {
+  z-index: 999;
+  position: absolute;
+  display: normal;
+  opacity: .99;
+  background-color: #fff;
+  border: 1px solid #333;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+}
+.context-menu {
+  background: white;
+  border: 1px solid lightgray;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+}
+.context-menu.open {
+  opacity: 1;
+  transition: none;
+  visibility: visible;
+}
+.context-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.context-menu ul li {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  display: block;
+}
+.context-menu .context-menu-item {
+  padding: 0.5em 1em;
+}
+.context-menu .context-menu-item:hover {
+  background-color: #d8d8d8;
+  cursor: pointer;
+}
+#OpenAll {
+  border-top: 1px solid #d8d8d8;
+  background-color: #edeff1; 
+}
+#OpenAll:hover {
+  background-color: #d8d8d8; 
+}
+#RollUp {
+  background-color: #edeff1;  
+}
+#RollUp:hover {
+  background-color: #d8d8d8; 
+}

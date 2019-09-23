@@ -1,0 +1,139 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+h1 {
+	font-weight: 800;
+	font-size: 30px;
+}
+h5 {
+	font-size: 17px;
+	color: #707070;
+	margin: 10px 0 10px 0;
+}
+h6 {
+	font-size: 17px;
+	color: #333;
+}
+h4 {
+	font-size: 17px;
+	color: #707070;
+	margin: 0 0 7px 0;
+}
+option {
+	font-weight: 500;
+}
+.bb-r {
+	display: flex;
+	justify-content: flex-end;
+  align-items: center;
+}
+.title {
+	margin: 30px 0 15px 6px;
+}
+.block-calc {
+	margin-bottom: 15px;
+	height: calc(100vh - 150px);
+}
+/*JSTree*/
+.jstree-search {
+	margin:0 0 12px 0;
+}
+.jstree-cont {
+	padding: 5px 10px 10px 10px; 
+  height: calc(100vh - 200px);
+  overflow: auto;
+  overflow-x: hidden;
+}
+/* Dep */
+.dep {
+  display: flex;
+	margin: 15px 0 10px 0;
+	height: 30px;
+}
+.dep-name {
+	display: flex;
+	align-items: center;
+  font-size: 19px;
+  color: #333;
+}
+.dep-btn-box {
+	height: 30px;
+}
+#jstree-result {
+	font-weight: 700;
+}
+#dep-re-input {
+	height: 30px;
+	font-weight: 500;
+}
+/* Ruck */
+.ruck {
+	margin-bottom: 15px;
+}
+.ruck-conf {
+  padding-left: 15px;
+	margin-bottom: -15px;
+}
+#lstBox4 {
+	height: 36px;
+	padding-left: 20px;
+	margin-bottom: 0;
+  overflow-y: hidden;
+	font-size: 16px;
+	font-weight: 500;
+}
+/* Sotrud */
+.sotrud {
+	height: calc(100% - 105px);
+}
+#lstBox3 {
+	padding: 10px 0 10px 0;
+  background-color: #fff;
+	border: 1px solid #d3d8de;
+	box-shadow: 0 0 1px 1px rgba(206,212,218,0.4);
+  border-radius: 4px;
+  outline-color: none;
+	height: 100%;
+  overflow: auto;
+}
+#lstBox3 option {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 13px;
+}
+/* Modal*/
+.modal-dialog {
+  max-width: 900px;
+}
+#lstBox1 {
+  height: 60vh;
+	margin: 12px 0 12px 0;
+}
+#lstBox5 {
+  height: 60vh;
+	margin: 12px 0 12px 0;
+}
+.tolp {
+  cursor: help;
+}
+.tolp::after {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px 8px 8px 0;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  content: attr(data-tooltip);
+  margin-top: -20px;
+  opacity: 0;
+  padding: 3px 7px;
+  position: absolute;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+.tolp:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+/* Alert */
+.swal-text {
+  font-size: 22px;
+}

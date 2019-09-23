@@ -1,0 +1,83 @@
+[
+    {
+        "id": "123",
+        "name": "Александр",
+        "lastname": "Порядин",
+        "r": "1",
+        "sel": "РЦДВ",
+        "tool": "tolp",
+				"col": "text-green"
+    },
+    {
+        "id": "456",
+        "name": "Константин",
+        "lastname": "Тартынский",
+        "r": "1",
+        "sel": "РЦДВ",
+        "tool": "tolp",
+        "col": "text-green"
+    },
+    {
+        "id": "789",
+        "name": "Дмитрий",
+        "lastname": "Лакиза",
+        "r": "1",
+        "sel": "РЦДВ",
+        "tool": "tolp",
+        "col": "text-green"
+    },
+    {
+        "id": "741",
+        "name": "Джейсон",
+        "lastname": "Джейкверович",
+        "r": "1",
+        "sel": "JavaScript",
+        "tool": "tolp",
+        "col": "text-green"
+    },
+    {
+        "id": "852",
+        "name": "Джава",
+        "lastname": "Скриптович",
+        "r": "1",
+        "sel": "JavaScript",
+        "tool": "tolp",
+        "col": "text-green"
+    },
+    {
+        "id": "963",
+        "name": "Алексей",
+        "lastname": "Коллбекович",
+        "r": ""
+    },
+    {
+        "id": "872",
+        "name": "Егор",
+        "lastname": "Солодов",
+        "r": ""
+    },
+    {
+        "id": "892",
+        "name": "Петр",
+        "lastname": "Дубровский",
+        "r": ""
+    },
+    {
+        "id": "812",
+        "name": "Максим",
+        "lastname": "Горький",
+        "r": ""
+    },
+    {
+        "id": "885",
+        "name": "Жора",
+        "lastname": "Гоголь",
+        "r": ""
+    },
+    {
+        "id": "836",
+        "name": "Лев",
+        "lastname": "Толстой",
+        "r": ""
+    }
+]
