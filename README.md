@@ -1,6 +1,7 @@
 # ERP module - enterprise structure (jQuery)
+Creating an enterprise structure and appointing employees to departments.
 
-Creating an enterprise structure and appointing employees to departments.  
+## Preview
 https://vsevporyadin.github.io/Enterprise-structure-jquery/.
 
 ## Module plugins:
