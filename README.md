@@ -2,7 +2,7 @@
 Creating an enterprise structure and appointing employees to departments.
 
 ## Preview
-https://vsevporyadin.github.io/Enterprise-structure-jquery/.
+https://vsevporyadin.github.io/Enterprise-structure-jquery/
 
 ## Module plugins
 jsTree.js | Bootstrap 4 | Bootstrap-select | SweetAlert
